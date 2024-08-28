@@ -1,0 +1,45 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+    <test name="Test">
+        <!-- Parameters matching your properties file -->
+        <parameter name="dBegin" value="2024-08-21"/>
+        <parameter name="smart14" value="2024-09-05"/>
+        <parameter name="smart7" value="2024-08-28"/>
+        <parameter name="smart2" value="2024-08-23"/>
+        <parameter name="mydate" value="2024-08-21"/>
+        <parameter name="SMART30" value="2024-09-30"/>
+        <parameter name="BOOKING_DATE_SMART30" value="2024-08-30"/>
+        <parameter name="SMART14" value="2024-09-05"/>
+        <parameter name="BOOKING_DATE_SMART14" value="2024-08-21"/>
+        <parameter name="SMART7" value="2024-08-28"/>
+        <parameter name="BOOKING_DATE_SMART7" value="2024-08-20"/>
+        <parameter name="SMART2" value="2024-08-23"/>
+        <parameter name="BOOKING_DATE_SMART2" value="2024-08-22"/>
+        <parameter name="BASIC" value="2024-08-21"/>
+        <parameter name="BOOKING_DATE_BASIC" value="2024-10-14"/>
+        <parameter name="Date_NBF" value="2024-08-29"/>
+        <parameter name="BOOKING_SITE_SMART30" value="FFFF"/>
+        <parameter name="BOOKING_SERVICE_SMART30" value="BTP14"/>
+        <parameter name="BOOKING_SERVICE02_SMART30" value="BTP24"/>
+        <parameter name="BOOKING_SITE_SMART14" value="BTP"/>
+        <parameter name="BOOKING_SERVICE_SMART14" value="BTP14"/>
+        <parameter name="BOOKING_SERVICE02_SMART14" value="BTP24"/>
+        <parameter name="BOOKING_SITE_SMART07" value="BTP"/>
+        <parameter name="BOOKING_SERVICE_SMART07" value="BTP14"/>
+        <parameter name="BOOKING_SERVICE02_SMART07" value="BTP24"/>
+        <parameter name="BOOKING_SITE_SMART2" value="BTP"/>
+        <parameter name="BOOKING_SERVICE_SMART2" value="BTP14"/>
+        <parameter name="BOOKING_SERVICE02_SMART2" value="BTP24"/>
+        <parameter name="BOOKING_SITE_BASIC" value="BTP"/>
+        <parameter name="BOOKING_SERVICE_BASIC" value="BTP14"/>
+        <parameter name="BOOKING_SERVICE02_BASIC" value="BTP24"/>
+        <parameter name="SITE_NBF" value="BTP"/>
+        <parameter name="SERVICE_NBF" value="PKB24"/>
+        <parameter name="DateSmart" value="2024-08-21"/>
+        <parameter name="URL" value="G3"/>
+
+        <classes>
+            <class name="LoadSoapUIProperties"/>
+        </classes>
+    </test>
+</suite>

@@ -1,0 +1,10 @@
+Status: FAILED
+Time Taken: 654
+Size: 0
+Timestamp: Tue Aug 20 18:29:11 CEST 2024
+TestStep: DateJAVA
+Error:groovy.lang.MissingPropertyException: No such property: dBegin for class: groovy.lang.Binding
+
+----------------- Messages ------------------------------
+groovy.lang.MissingPropertyException: No such property: dBegin for class: groovy.lang.Binding
+error at line: 4

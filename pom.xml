@@ -1,0 +1,91 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+
+  <groupId>org.example</groupId>
+  <artifactId>SoapUIRunner</artifactId>
+  <version>1.0-SNAPSHOT</version>
+  <packaging>jar</packaging>
+
+  <name>SoapUiIExe</name>
+  <url>http://maven.apache.org</url>
+
+  <properties>
+    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    <maven.test.failure.ignore>false</maven.test.failure.ignore>
+  </properties>
+
+  <dependencies>
+    <!-- TestNG dependency -->
+    <dependency>
+      <groupId>org.testng</groupId>
+      <artifactId>testng</artifactId>
+      <version>7.7.1</version>
+    </dependency>
+    <dependency>
+      <groupId>junit</groupId>
+      <artifactId>junit</artifactId>
+      <version>4.13.2</version>
+      <scope>test</scope>
+    </dependency>
+  </dependencies>
+
+
+  <profiles>
+    <!-- Profile for the first TestNG XML configuration -->
+    <profile>
+      <id>Init</id>
+      <build>
+        <plugins>
+          <plugin>
+            <groupId>org.apache.maven.plugins</groupId>
+            <artifactId>maven-surefire-plugin</artifactId>
+            <configuration>
+              <suiteXmlFiles>
+                <suiteXmlFile>C:/Users/MohamedBABAOUI/IdeaProjects/SoapUIRunner/testNGMVN.xml</suiteXmlFile>
+              </suiteXmlFiles>
+              <systemPropertyVariables>
+                <dBegin>${dBegin}</dBegin>
+                <smart14>${smart14}</smart14>
+                <URL>${URL}</URL>
+              </systemPropertyVariables>
+            </configuration>
+          </plugin>
+        </plugins>
+      </build>
+      <properties>
+        <dBegin>2023-01-01</dBegin> <!-- Default values can be defined here -->
+        <smart14>2023-01-11</smart14>
+        <URL>A5</URL>
+      </properties>
+    </profile>
+
+    <!-- Profile for the second TestNG XML configuration -->
+    <profile>
+      <id>Run</id>
+      <build>
+        <plugins>
+          <plugin>
+            <groupId>org.apache.maven.plugins</groupId>
+            <artifactId>maven-surefire-plugin</artifactId>
+            <configuration>
+              <suiteXmlFiles>
+                <suiteXmlFile>C:/Users/MohamedBABAOUI/IdeaProjects/SoapUIRunner/testNGRUN.xml</suiteXmlFile>
+              </suiteXmlFiles>
+              <systemPropertyVariables>
+                <choice>${choice}</choice>
+                <suiteName>${suiteName}</suiteName>
+                <suiteNames>${suiteNames}</suiteNames>
+              </systemPropertyVariables>
+            </configuration>
+          </plugin>
+        </plugins>
+      </build>
+      <properties>
+        <choice>1</choice>
+        <suiteName>MySuiteName</suiteName>
+        <suiteNames>MySuiteNames</suiteNames>
+      </properties>
+    </profile>
+  </profiles>
+</project>

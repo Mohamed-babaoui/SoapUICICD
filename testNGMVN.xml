@@ -1,0 +1,44 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+    <test name="Test">
+        <!-- Parameters now reference Maven properties -->
+        <parameter name="dBegin" value="${dBegin}"/>
+        <parameter name="smart14" value="${smart14}"/>
+        <!--parameter name="smart7" value="${smart7}"/>
+        <parameter name="smart2" value="${smart2}"/>
+        <parameter name="mydate" value="${mydate}"/>
+        <parameter name="SMART30" value="${SMART30}"/>
+        <parameter name="BOOKING_DATE_SMART30" value="${BOOKING_DATE_SMART30}"/>
+        <parameter name="SMART14" value="${SMART14}"/>
+        <parameter name="BOOKING_DATE_SMART14" value="${BOOKING_DATE_SMART14}"/>
+        <parameter name="SMART7" value="${SMART7}"/>
+        <parameter name="BOOKING_DATE_SMART7" value="${BOOKING_DATE_SMART7}"/>
+        <parameter name="SMART2" value="${SMART2}"/>
+        <parameter name="BOOKING_DATE_SMART2" value="${BOOKING_DATE_SMART2}"/>
+        <parameter name="BASIC" value="${BASIC}"/>
+        <parameter name="BOOKING_DATE_BASIC" value="${BOOKING_DATE_BASIC}"/>
+        <parameter name="Date_NBF" value="${Date_NBF}"/>
+        <parameter name="BOOKING_SITE_SMART30" value="${BOOKING_SITE_SMART30}"/>
+        <parameter name="BOOKING_SERVICE_SMART30" value="${BOOKING_SERVICE_SMART30}"/>
+        <parameter name="BOOKING_SERVICE02_SMART30" value="${BOOKING_SERVICE02_SMART30}"/>
+        <parameter name="BOOKING_SITE_SMART14" value="${BOOKING_SITE_SMART14}"/>
+        <parameter name="BOOKING_SERVICE_SMART14" value="${BOOKING_SERVICE_SMART14}"/>
+        <parameter name="BOOKING_SERVICE02_SMART14" value="${BOOKING_SERVICE02_SMART14}"/>
+        <parameter name="BOOKING_SITE_SMART07" value="${BOOKING_SITE_SMART07}"/>
+        <parameter name="BOOKING_SERVICE_SMART07" value="${BOOKING_SERVICE_SMART07}"/>
+        <parameter name="BOOKING_SERVICE02_SMART07" value="${BOOKING_SERVICE02_SMART07}"/>
+        <parameter name="BOOKING_SITE_SMART2" value="${BOOKING_SITE_SMART2}"/>
+        <parameter name="BOOKING_SERVICE_SMART2" value="${BOOKING_SERVICE_SMART2}"/>
+        <parameter name="BOOKING_SERVICE02_SMART2" value="${BOOKING_SERVICE02_SMART2}"/>
+        <parameter name="BOOKING_SITE_BASIC" value="${BOOKING_SITE_BASIC}"/>
+        <parameter name="BOOKING_SERVICE_BASIC" value="${BOOKING_SERVICE_BASIC}"/>
+        <parameter name="BOOKING_SERVICE02_BASIC" value="${BOOKING_SERVICE02_BASIC}"/>
+        <parameter name="SITE_NBF" value="${SITE_NBF}"/>
+        <parameter name="SERVICE_NBF" value="${SERVICE_NBF}"/>
+        <parameter name="DateSmart" value="${DateSmart}"/-->
+        <parameter name="URL" value="${URL}"/>
+        <classes>
+            <class name="LoadSoapUIProperties"/>
+        </classes>
+    </test>
+</suite>

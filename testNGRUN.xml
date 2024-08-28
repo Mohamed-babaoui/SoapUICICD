@@ -1,0 +1,12 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+    <test name="Test">
+        <!-- Parameters now reference Maven properties -->
+        <parameter name="choice" value="${choice}"/>
+        <parameter name="suiteName" value="${suiteName}"/>
+        <parameter name="suiteNames" value="${suiteNames}"/>
+        <classes>
+            <class name="SoapUIRunnerTNG"/>
+        </classes>
+    </test>
+</suite>

@@ -5,11 +5,12 @@ import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.Paths;
 import java.util.*;
+import static org.apache.commons.io.FilenameUtils.separatorsToSystem;
 
 public class SoapUIRunner {
 
     // Path to testrunner.bat
-    private static final String TESTRUNNER = "C:\\Program Files\\SmartBear\\SoapUI-5.6.1\\bin\\testrunner.bat";
+    private static final String TESTRUNNER = separatorsToSystem("C:\\Program Files\\SmartBear\\SoapUI-5.6.1\\bin\\testrunner.bat");
 
     // Path to SoapUI project file
     private static final String PROJECT_FILE = "C:\\Users\\MohamedBABAOUI\\TNR_BF\\ws_tnr_bf_06_24.xml";

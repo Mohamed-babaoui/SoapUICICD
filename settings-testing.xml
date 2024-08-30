@@ -1,0 +1,26 @@
+<settings>
+        <proxies>
+        </proxies>
+
+        <servers>
+                <server>
+                        <id>docker</id>
+                        <username>testing-nx-docker</username>
+                        <password>sHywS00Lg7oKJBC</password>
+                </server>
+        </servers>
+
+  <mirrors>
+    <mirror>
+      <id>docker</id>
+      <mirrorOf>*</mirrorOf>
+      <url>https://nexus.pvcp.intra:8444/repository/docker_group</url>
+      <name>Artifactory</name>
+    </mirror>
+
+  </mirrors>
+
+  <profiles>
+  </profiles>
+
+</settings>
